@@ -27,8 +27,6 @@ app.use((err, req, res, next) => {
 
   errResult = err;
 
-  console.log({ err });
-
   const error = errResult.status ? errResult : internalServerErrorCreator();
   const status = errResult.status || 500;
   console.log(error.stack);
