@@ -29,7 +29,6 @@ function Main() {
     socket.on("private message", ({ message, userId, time }) => {
       const changingId = userId === user.id ? currentUser.id : userId;
 
-      console.log({ userId, users });
       const firstName =
         user.id === userId
           ? user.firstName

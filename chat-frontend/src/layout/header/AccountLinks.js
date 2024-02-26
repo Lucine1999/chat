@@ -16,8 +16,6 @@ function AccountLinks() {
   const dispatch = useDispatch();
   const classes = iconsStyles();
 
-  console.log({ role });
-
   const handleSignOut = () => {
     dispatch(signOut());
     setSignOutModal(false);
